@@ -7,17 +7,17 @@ const findBestEmployee = function (employees) {
   for (let i = 0; i < numbersCount.length; i++) {
     if (numbersCount[i] > mostActive) {
       mostActive = numbersCount[i];
-    } 
+    }
   }
   let employeeCount = [];
   employeeCount = Object.keys(employees);
-  let mostActiveEmployee = employeeCount[0]
+  let mostActiveEmployee = employeeCount[0];
   for (let index = 0; index < employeeCount.length; index++) {
-    if ( index === numbersCount.indexOf(mostActive)) {
-      mostActiveEmployee = employeeCount[index]
-    } 
+    if (index === numbersCount.indexOf(mostActive)) {
+      mostActiveEmployee = employeeCount[index];
+    }
   }
-  return mostActiveEmployee
+  return mostActiveEmployee;
 };
 
 console.log(
